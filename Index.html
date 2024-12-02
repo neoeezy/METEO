@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Météo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+    <div id="weather-app">
+        <!-- En-tête -->
+        <header>
+            <div id="logo-container">
+                <!-- Logo de votre site, par exemple -->
+            </div>
+            <div id="weather-banner" class="weather-banner"></div> <!-- Bannière météo -->
+        </header>
+
+        <!-- Zone de recherche -->
+        <div id="controls">
+            <input type="text" id="city-input" placeholder="Entrez une ville">
+            <button id="search-button">Obtenir la météo</button>
+            <div id="suggestions"></div>
+        </div>
+
+        <!-- Affichage de la météo -->
+        <div id="weather-display">
+            <div id="weather-content"></div>
+            <button id="back-button">Retour sur la carte</button>
+        </div>
+
+        <!-- La carte Leaflet -->
+        <div id="map"></div>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 Talbi Adil - Resurgences</p>
+        </footer>
+    </div>
+
+    <video id="background-video" autoplay loop muted>
+        <!-- Ajouter ici les vidéos -->
+        <source id="video-source" src="" type="video/mp4">
+    </video>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
